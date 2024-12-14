@@ -6,8 +6,8 @@ Shader "Examples/Stencil"
     }
 	SubShader
     {
-        Tags
-		{
+        Tags 
+		{ 
 			"RenderType" = "Opaque"
 			"Queue" = "Geometry"
 			"RenderPipeline" = "UniversalPipeline"
@@ -28,3 +28,5 @@ Shader "Examples/Stencil"
         }
     }
 }
+
+
