@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Ryan Murray
-  productName: VR Template Escape Room 201A
+  companyName: 5pektrum
+  productName: EscapeRoomXR
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -141,7 +141,10 @@ PlayerSettings:
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: -2793588325796982936, guid: 4f7c9df1d42f718d996437bfa54a5307, type: 2}
+  - {fileID: 7610898203191055876, guid: 89b0af13fa16b9747b261d1be3e8e066, type: 2}
+  - {fileID: 11400000, guid: 5cc4b3bbfeef567499825961a03730e6, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -163,7 +166,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.RyanMurray.VRTemplateEscapeRoom201A
-    Standalone: com.Ryan-Murray.VR-Template-Escape-Room
+    Standalone: com.5pektrum.EscapeRoomXR
   buildNumber:
     Standalone: 0
     VisionOS: 0
