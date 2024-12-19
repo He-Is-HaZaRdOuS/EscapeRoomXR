@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class FloatingText : MonoBehaviour
 {
@@ -9,12 +10,20 @@ public class FloatingText : MonoBehaviour
     [Header("Spin Settings")]
     [SerializeField] private float spinSpeed = 50f; // Speed of rotation (degrees per second)
 
+    [Header("Text Settings")]
+    [SerializeField] private string message = "Push the button to restart";
+
+    private TextMeshPro textMeshPro;
+    private int fallCounter = 0;
+
     private Vector3 startPosition;
 
     private void Start()
     {
+        textMeshPro = GetComponent<TextMeshPro>();
         // Store the initial position of the text
         startPosition = transform.position;
+        textMeshPro.text = message;
     }
 
     private void Update()
@@ -25,5 +34,20 @@ public class FloatingText : MonoBehaviour
 
         // Spin effect: Rotate the text around its Y-axis
         transform.Rotate(Vector3.up, spinSpeed * Time.deltaTime, Space.World);
+
+        if (fallCounter > 0)
+        {
+            embedFallCounter();
+        }
+    }
+
+    public void incrementFallCounter()
+    {
+        fallCounter++;
+    }
+
+    public void embedFallCounter()
+    {
+        textMeshPro.text = "Fall Counter: " + fallCounter + "\n" + message;
     }
 }

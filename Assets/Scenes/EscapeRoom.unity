@@ -2108,6 +2108,8 @@ MonoBehaviour:
   hoverSpeed: 2
   hoverAmplitude: 0.25
   spinSpeed: 50
+  textMeshPro: {fileID: 142384393}
+  message: Push the button to restart
 --- !u!114 &142384393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5336,6 +5338,7 @@ MonoBehaviour:
   partyHat: {fileID: 1769218687}
   button: {fileID: 259056310}
   clipboard: {fileID: 1786820124}
+  hint: "Find the party hat. \nSacrafice it to the flames."
   secretButtonHint: {fileID: 104126612}
 --- !u!65 &339582376
 BoxCollider:
@@ -6943,7 +6946,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &444066793
 Transform:
   m_ObjectHideFlags: 0
@@ -6974,6 +6977,7 @@ MonoBehaviour:
   myDoor: {fileID: 1618558644}
   myDoor2: {fileID: 1711126861}
   clipboard: {fileID: 1786820124}
+  hint: Take a good look at yourself.
 --- !u!65 &444066795
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8678,7 +8682,7 @@ Transform:
   m_GameObject: {fileID: 520510905}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.491, z: 0}
+  m_LocalPosition: {x: 0, y: -0.87, z: 0}
   m_LocalScale: {x: 0.6, y: 1, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15029,7 +15033,7 @@ Transform:
   m_GameObject: {fileID: 1097267996}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -10, y: 3.95, z: 5.45}
+  m_LocalPosition: {x: -10, y: 3.95, z: 5.46}
   m_LocalScale: {x: 8.36, y: 8.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15076,7 +15080,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 80db4867ee143a7668095eafde9a39a4, type: 2}
+  - {fileID: 2100000, guid: 8a8e064f4c57cd441bd2746f3e200812, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17523,8 +17527,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7873184977108000993, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      propertyPath: m_CameraYOffset
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873184977108000993, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_RequestedTrackingOriginMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8063056433196656523, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_IsActive
@@ -17541,6 +17549,10 @@ PrefabInstance:
     - target: {fileID: 9014170783705847993, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_ModelPrefab
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014170783728641054, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 9014170783809206330, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_BackGroundColor.a
@@ -17590,6 +17602,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 128026419}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7696548424635294048, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1694569625}
     - targetCorrespondingSourceObject: {fileID: 9014170783809206332, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1101816372}
@@ -19515,6 +19530,7 @@ MonoBehaviour:
   myDoor: {fileID: 286080589}
   myDoor2: {fileID: 1097267996}
   clipboard: {fileID: 1786820124}
+  hint: Take a good look at yourself.
 --- !u!65 &1443297291
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22970,6 +22986,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1379523026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1694569614 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7696548424635294048, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+  m_PrefabInstance: {fileID: 1287344835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1694569625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694569614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e31cca684dae0ce2baea0c4000d855f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatingText: {fileID: 142384392}
 --- !u!4 &1695988190 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5533872886368735122, guid: a9eca283a47e9914bace64faa404259e, type: 3}
@@ -23484,6 +23518,7 @@ MonoBehaviour:
   myDoor2: {fileID: 286080589}
   myDoor3: {fileID: 1097267996}
   clipboard: {fileID: 1786820124}
+  hint: "Find the flashlight. \nUse it to find the hidden code."
 --- !u!65 &1754733049
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27133,8 +27168,8 @@ Transform:
   m_GameObject: {fileID: 2009135259}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.393151, y: -0.11928177, z: 19}
-  m_LocalScale: {x: 18.315725, y: 23.75, z: 39.57262}
+  m_LocalPosition: {x: 13.39, y: -0.11928177, z: 20}
+  m_LocalScale: {x: 18.315725, y: 23.75, z: 42.17}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2074336826}
@@ -27247,8 +27282,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a062b05d8ee567a478e833fd55fbf886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myDoor: {fileID: 1618558644}
+  myDoor2: {fileID: 1711126861}
   audioSource: {fileID: 2009135262}
   clipboard: {fileID: 1786820124}
+  hint: "Escape successful! \nYou are free! \n...\nWe're in outer space now? \n\nWell,
+    at least you found this impossibly non-euclidean cube to keep you company..."
 --- !u!1001 &2013727320
 PrefabInstance:
   m_ObjectHideFlags: 0

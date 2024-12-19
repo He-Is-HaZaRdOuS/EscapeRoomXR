@@ -8,6 +8,7 @@ public class SealServerRoom : MonoBehaviour
     public GameObject myDoor2;
     public GameObject myDoor3;
     public ClipboardHint clipboard;
+    public string hint = "Find the flashlight. \nUse it to find the hidden code.";
     private bool alreadyEntered = false;
 
     private void OnTriggerEnter(Collider col)
@@ -17,7 +18,7 @@ public class SealServerRoom : MonoBehaviour
             if (!alreadyEntered)
             {
                 alreadyEntered = true;
-                clipboard.UpdateHint("Find the flashlight. \nUse it to find the hidden code.");
+                clipboard.UpdateHint(hint);
             }
             myDoor.SetActive(true);
             myDoor2.SetActive(true);
